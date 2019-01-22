@@ -59,11 +59,11 @@ trait Item
 
     public function getItems()
     {
-        return current($this->items);
+        return $this->items;
     }
 
     public function itemLenght()
     {
-        return count(current($this->items));
+        return count($this->items);
     }
 }
